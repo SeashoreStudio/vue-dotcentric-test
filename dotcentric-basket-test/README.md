@@ -1,14 +1,11 @@
 # dotcentric-basket-test
 
-This template should help get you started developing with Vue 3 in Vite.
+This is a repo for the dotcentric basket test
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Known issues that I ran out of time for
+* Removing all items from the cart I didn't create an empty cart message
+* Updating the json file with the updated values. I had this in but being rusty on vue I couldn't work out the bug into why it wasn't updating the file. It was fetching the correct product but returning a 404 when trying to do a delete/put
+* a decimal place issue when increasing quantity
 
 ## Project Setup
 
@@ -20,6 +17,12 @@ npm install
 
 ```sh
 npm run dev
+```
+
+### Run backend server
+
+```sh
+npm run backend
 ```
 
 ### Compile and Minify for Production
