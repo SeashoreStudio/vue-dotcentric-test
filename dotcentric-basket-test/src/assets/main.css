@@ -1,0 +1,106 @@
+@import './base.css';
+
+#app {
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+.cart {
+  width: 100%;
+}
+
+.total {
+  background: #FCFCFC;
+  margin-bottom: 2px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.total p:nth-of-type(2) {
+  text-align: right;
+}
+
+.total p {
+  font-size: 12px;
+}
+
+.total--final p {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  margin: 0 0 20px;
+  padding: 20px;
+}
+
+@media (min-width: 781px) {
+  .product {
+    grid-template-columns: 2fr 10fr;
+  }
+}
+
+.product:last-of-type {
+  margin-bottom: 0;
+}
+
+.product:nth-of-type(odd) {
+  background: #F0F0F0;
+}
+
+.product__image {
+  max-width: 100px;
+}
+
+.product__quantity {
+  display: grid;
+  grid-template-columns: 3fr 6fr 3fr;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.product__actions {
+  display: grid;
+  grid-template-columns: 6fr 6fr;
+}
+
+@media (min-width: 781px) {
+  .product__actions {
+    grid-template-columns: 4fr 8fr;
+  }
+}
+
+.product__quantity button:hover {
+  cursor: pointer;
+}
+
+.product__quantityamount {
+  text-align: center;
+}
+
+.increment-btn,
+.decrement-btn,
+.remove-btn,
+.checkout__button {
+  width: 100%;
+  background: #F9CCD9;
+  border: 0;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 0;
+}
+
+.remove-btn {
+  background: #F3DBB3;
+  width: auto;
+  margin: 10px 0;
+  justify-self: end;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+}
